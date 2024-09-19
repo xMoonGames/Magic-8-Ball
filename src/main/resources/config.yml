@@ -1,2 +1,119 @@
 options:
   auto-update: true
+  lang: en-US
+
+# below are all languages supported
+# by default en-US, pt-BR
+# you can add new languages below, and set it in the lang field above
+# after each addon update make sure to re-check this file
+# to see if your added language continues here
+# it's recommended to back up this file
+languages:
+  en-US:
+    console:
+      registering-geo: "Registering geo resources..."
+      loading-items: "Loading items..."
+      loading-researches: "Loading researches..."
+      addon-enabled: "Enabled Magic8Ball addon"
+      addon-disabled: "Disabled Magic8Ball addon"
+      loading-language: "Loading language..."
+      loaded-language: "Loaded language:"
+    item-groups:
+      main:
+        name: "&eMagic 8 Ball"
+        lore: ""
+    items:
+      M8BALL_FRAGMENT:
+        name: "&fMagic &68 &fBall &bFragment"
+        lore:
+          - ""
+          - "Emits traces of &6knowledge"
+          - ""
+      M8BALL_ITEM:
+        name: "&fMagic &68 &fBall"
+        lore:
+          - ""
+          - "&fCan answer anything .."
+          - "&f.. maybe, my sources says so"
+          - ""
+          - "&eLeft Click&7 on air to use"
+          - "&eRight Click&7 to use (on block)"
+          - ""
+    responses:
+      affirmative:
+        - "It is certain"
+        - "It is decidedly so"
+        - "Without a doubt"
+        - "Yes definitely"
+        - "You may rely on it"
+        - "As I see it, yes"
+        - "Most likely"
+        - "Outlook good"
+        - "Yes"
+        - "Signs point to yes"
+      noncommittal:
+        - "Reply hazy, try again"
+        - "Ask again later"
+        - "Better not tell you now"
+        - "Cannot predict now"
+        - "Concentrate and ask again"
+      negative:
+        - "Don’t count on it"
+        - "My reply is no"
+        - "My sources say no"
+        - "Outlook not so good"
+        - "Very doubtful"
+  pt-BR:
+    console:
+      registering-geo: "Registrando recursos geo..."
+      loading-items: "Carregando items..."
+      loading-researches: "Carregando pesquisas..."
+      addon-enabled: "Addon Magic8Ball habilitado"
+      addon-disabled: "Addon Magic8Ball desabilitado"
+      loading-language: "Carregando linguagem..."
+      loaded-language: "Linguagem carregada:"
+    item-groups:
+      main:
+        name: "&eBola 8 Mágica"
+        lore: ""
+    items:
+      M8BALL_FRAGMENT:
+        name: "&bFragmento &fde Bola &68 &fMágica"
+        lore:
+          - ""
+          - "Emite traços de &6conhecimento"
+          - ""
+      M8BALL_ITEM:
+        name: "&fBola &68 &fMágica"
+        lore:
+          - ""
+          - "&fPode responder qualquer coisa .."
+          - "&f.. talvez, minhas fontes dizem que sim"
+          - ""
+          - "&eBotão Esquerdo&7 no ar para usar"
+          - "&eBotão Direito&7 para usar (no bloco)"
+          - ""
+    responses:
+        affirmative:
+          - "É certo"
+          - "Definitivamente sim"
+          - "Sem dúvida"
+          - "Sim, definitivamente"
+          - "Pode confiar nisso"
+          - "Ao que parece, sim"
+          - "Muito provável"
+          - "As perspectivas são boas"
+          - "Sim"
+          - "Sinais apontam que sim"
+        noncommittal:
+          - "Resposta confusa, tente novamente"
+          - "Pergunte novamente mais tarde"
+          - "Melhor não te dizer agora"
+          - "Não posso prever agora"
+          - "Concentre-se e pergunte novamente"
+        negative:
+          - "Não conte com isso"
+          - "Minha resposta é não"
+          - "Minhas fontes dizem que não"
+          - "As perspectivas não são boas"
+          - "Muito improvável"
