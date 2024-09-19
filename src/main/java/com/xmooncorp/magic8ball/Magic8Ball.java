@@ -18,10 +18,10 @@ public class Magic8Ball extends JavaPlugin implements SlimefunAddon {
     private static Magic8Ball instance;
     private ConfigBasedLocalization localization;
     private Config config;
-    private String selectedLanguage;
 
     @Override
     public void onEnable() {
+
         instance = this;
         config = new Config(this);
 
@@ -38,8 +38,6 @@ public class Magic8Ball extends JavaPlugin implements SlimefunAddon {
         loadResearches();
 
         log(localization().getString("console.addon-enabled"));
-
-        log("Here, it should give error: " + localization().getString("console.something-that-does-not-exist"));
 
     }
 
@@ -71,6 +69,7 @@ public class Magic8Ball extends JavaPlugin implements SlimefunAddon {
         return instance;
     }
 
+    @SuppressWarnings("deprecation")
     private void tryAutoUpdate() {
         if (getConfig().getBoolean("options.auto-update") && getDescription().getVersion().startsWith("Dev")) {
             new BlobBuildUpdater(this, getFile(), "Magic8Ball", "Dev").start();
@@ -79,10 +78,6 @@ public class Magic8Ball extends JavaPlugin implements SlimefunAddon {
 
     public static void log(@Nonnull String message) {
         instance().getLogger().info(message);
-    }
-
-    public static void log(@Nonnull String message, @Nonnull Level logLevel) {
-        instance().getLogger().log(logLevel, message);
     }
 
     private void loadItems() {
