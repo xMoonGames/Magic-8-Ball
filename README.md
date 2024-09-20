@@ -13,7 +13,7 @@ The Magic 8 Ball addon brings the classic fortune-telling toy into Minecraft! Wi
 - **Shake for Answers**: Simply shake the Magic 8 Ball item to get a random answer to your question.
 
 ## Download
-- For the list of supported Minecraft versions check our [releases page](https://github.com/xMoonGames/Magic8Ball)
+- To download the addon for the supported Minecraft versions check our [releases page](https://github.com/xMoonGames/Magic-8-Ball/releases) or [blob build](https://blob.build/project/Magic8Ball)
 
 ## Requirements
 
