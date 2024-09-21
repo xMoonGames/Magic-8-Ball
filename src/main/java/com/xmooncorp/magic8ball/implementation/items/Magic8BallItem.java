@@ -3,6 +3,7 @@ package com.xmooncorp.magic8ball.implementation.items;
 import com.xmooncorp.magic8ball.Magic8Ball;
 import com.xmooncorp.magic8ball.core.ConfigBasedLocalization;
 import com.xmooncorp.magic8ball.utils.LocationUtils;
+import com.xmooncorp.magic8ball.utils.compatibility.VersionedParticle;
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
@@ -58,17 +59,17 @@ public class Magic8BallItem extends SlimefunItem implements Listener {
             case "affirmative" -> {
                 color = "§a";
                 sound = Sound.ENTITY_VILLAGER_YES;
-                particle = Particle.TOTEM;
+                particle = VersionedParticle.TOTEM_OF_UNDYING;
             }
             case "noncommittal" -> {
                 color = "§7";
                 sound = Sound.ENTITY_VILLAGER_TRADE;
-                particle = Particle.CRIT;
+                particle = VersionedParticle.CRIT;
             }
             case "negative" -> {
                 color = "§c";
                 sound = Sound.ENTITY_VILLAGER_NO;
-                particle = Particle.CRIT_MAGIC;
+                particle = VersionedParticle.ENCHANTED_HIT;
             }
         }
         sendActionBarMessage(player, color + randomMessage[1]);
@@ -113,6 +114,7 @@ public class Magic8BallItem extends SlimefunItem implements Listener {
         world.playSound(location, sound, 1, 0.65f);
     }
 
+    @SuppressWarnings("unused")
     @EventHandler()
     public void onPlayerInteract(PlayerInteractEvent event) {
         if (event.getAction() != Action.LEFT_CLICK_AIR) return;

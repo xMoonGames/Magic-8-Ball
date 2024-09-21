@@ -43,9 +43,8 @@ public class Magic8Ball extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public void onDisable() {
-        // Logic for disabling the plugin...
-        instance = null;
         log(localization().getString("console.addon-disabled"));
+        instance = null;
     }
 
     @Override
