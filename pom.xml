@@ -8,7 +8,7 @@
     <version>UNOFFICIAL</version>
 
     <properties>
-        <java.version>16</java.version>
+        <java.version>21</java.version>
         <paper-spigot.version>1.20.6</paper-spigot.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -48,7 +48,7 @@
     </repositories>
 
     <build>
-        <finalName>${project.name} ${project.version}</finalName>
+        <finalName>${project.name} v${project.version}</finalName>
         <defaultGoal>clean package</defaultGoal>
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
 
