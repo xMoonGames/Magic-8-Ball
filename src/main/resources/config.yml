@@ -117,3 +117,57 @@ languages:
           - "Minhas fontes dizem que não"
           - "As perspectivas não são boas"
           - "Muito improvável"
+  zh-CN:
+    console:
+      registering-geo: "正在注册GEO资源..."
+      loading-items: "正在加载物品..."
+      loading-researches: "正在加载研究..."
+      addon-enabled: "已启用 Magic8Ball 附属"
+      addon-disabled: "未启用 Magic8Ball 附属"
+      loading-language: "正在加载语言..."
+      loaded-language: "已加载语言:"
+    item-groups:
+      main:
+        name: "&e魔法8号球"
+        lore: ""
+    items:
+      M8BALL_FRAGMENT:
+        name: "&f魔法&68&f号球&b碎片"
+        lore:
+          - ""
+          - "散发着&6知识"
+          - ""
+      M8BALL_ITEM:
+        name: "&f魔法&68&f号球"
+        lore:
+          - ""
+          - "&f我可以回答你任何事情.."
+          - "&f..至少我的消息来源是这样说的"
+          - ""
+          - "&e左击空气：&7使用"
+          - "&e右击方块：&7使用"
+          - ""
+    responses:
+      affirmative:
+        - "这是肯定的"
+        - "绝对是这样"
+        - "毫无疑问"
+        - "是的，当然"
+        - "你可以信赖它"
+        - "在我看来，是的"
+        - "很有可能"
+        - "大吉"
+        - "对的"
+        - "有迹象表明是的"
+      noncommittal:
+        - "回复朦胧，再试一次"
+        - "请稍后再问"
+        - "最好现在不要告诉你"
+        - "现在暂时无法预测"
+        - "集中精神，再问一遍"
+      negative:
+        - "不要指望它"
+        - "我的回答是否定的"
+        - "我的消息来源说没有"
+        - "大凶"
+        - "十分可疑"
